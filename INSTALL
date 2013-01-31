@@ -7,4 +7,4 @@ As an example, with ``pip``:
 
 .. code-block:: sh
 
-   pip install https://bitbucket.org/benoitbryon/sphinxcontrib-testbuild/get/tip.tar.gz#egg=sphinxcontrib.testbuild
+   pip install https://github.com/benoitbryon/sphinxcontrib-testbuild/archive/master.tar.gz#egg=sphinxcontrib.testbuild
