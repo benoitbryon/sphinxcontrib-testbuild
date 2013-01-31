@@ -6,11 +6,6 @@ PYTHON = python
 
 develop: buildout
 
-maintainer-clean:
-	rm -r bin/ lib/
-
-release:
-	bin/fullrelease
 
 buildout:
 	if [ ! -d $(BUILDOUT_DIR)/downloads ]; then \
@@ -23,3 +18,17 @@ buildout:
 		$(PYTHON) $(BUILDOUT_DIR)/bootstrap.py --distribute -c etc/buildout.cfg buildout:directory=$(ROOT_DIR); \
 	fi
 	$(BUILDOUT) -N -c etc/buildout.cfg buildout:directory=$(ROOT_DIR)
+
+
+maintainer-clean:
+	rm -r bin/ lib/
+
+
+release:
+	bin/fullrelease
+
+
+documentation:
+	mkdir -p docs/_static
+	mkdir -p $(ROOT_DIR)/var/docs
+	make --directory=docs clean html doctest
