@@ -1,40 +1,46 @@
 # -*- coding: utf-8 -*-
+from os.path import dirname, join
+from setuptools import setup
 
-from setuptools import setup, find_packages
 
-long_desc = '''
-This package contains the testbuild Sphinx extension.
+def read_relative_file(filename):
+    """Returns contents of the given file, which path is supposed relative
+    to this module."""
+    with open(join(dirname(__file__), filename)) as f:
+        return f.read().strip()
 
-.. add description here ..
-'''
 
-requires = ['Sphinx>=0.6']
+name = 'sphinxcontrib-testbuild'
+packages = ['sphinxcontrib.testbuild']
+readme = read_relative_file('README')
+version = read_relative_file('VERSION')
+requirements = ['setuptools',
+                'Sphinx>=0.6']
 
-setup(
-    name='sphinxcontrib-testbuild',
-    version='0.1',
-    url='http://bitbucket.org/birkenfeld/sphinx-contrib',
-    download_url='http://pypi.python.org/pypi/sphinxcontrib-testbuild',
-    license='BSD',
-    author='Benoît Bryon',
-    author_email='benoit@marmelune.net',
-    description='Sphinx "testbuild" extension',
-    long_description=long_desc,
-    zip_safe=False,
-    classifiers=[
-        'Development Status :: 4 - Beta',
-        'Environment :: Console',
-        'Environment :: Web Environment',
-        'Intended Audience :: Developers',
-        'License :: OSI Approved :: BSD License',
-        'Operating System :: OS Independent',
-        'Programming Language :: Python',
-        'Topic :: Documentation',
-        'Topic :: Utilities',
-    ],
-    platforms='any',
-    packages=find_packages(),
-    include_package_data=True,
-    install_requires=requires,
-    namespace_packages=['sphinxcontrib'],
-)
+
+if __name__ == '__main__':
+    setup(name=name,
+          version=version,
+          description='Test Sphinx builds with Python tests.',
+          long_description=readme,
+          author='Benoît Bryon',
+          author_email='benoit@marmelune.net',
+          url='http://bitbucket.org/benoitbryon/sphinxcontrib-testbuild',
+          license='BSD',
+          zip_safe=False,
+          classifiers=['Development Status :: 4 - Beta',
+                       'Environment :: Console',
+                       'Environment :: Web Environment',
+                       'Intended Audience :: Developers',
+                       'License :: OSI Approved :: BSD License',
+                       'Operating System :: OS Independent',
+                       'Programming Language :: Python',
+                       'Topic :: Documentation',
+                       'Topic :: Utilities',
+                       ],
+          platforms='any',
+          packages=packages,
+          namespace_packages=['sphinxcontrib'],
+          include_package_data=True,
+          install_requires=requirements,
+          )

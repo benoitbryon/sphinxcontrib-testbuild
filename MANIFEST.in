@@ -1,3 +1,4 @@
-include README
-include LICENSE
-include CHANGES.*
+recursive-include sphinxcontrib *
+global-exclude *.pyc
+include *.txt
+include README VERSION CHANGELOG LICENSE AUTHORS

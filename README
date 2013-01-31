@@ -1,0 +1,41 @@
+#######################
+sphinxcontrib.testbuild
+#######################
+
+Test Sphinx builds with Python tests.
+
+
+******
+Vision
+******
+
+As a documentation writer, I want to include documentation builds inside my
+continuous integration test suite, so that I'm aware of documentation build
+status.
+
+sphinxcontrib.testbuild implements such tests for Sphinx, in Python.
+
+
+*****
+Usage
+*****
+
+Using sphinx-testbuild command
+==============================
+
+Run ``sphinx-testbuild`` command and get test results.
+See ``sphinx-testbuild --help`` for details.
+
+
+Using a SphinxBuildTestCase
+===========================
+
+Extend and customize :py:class:`sphinxcontrib.testbuild.SphinxBuildTestCase`
+class in your test suite. Then run your test suite as usual.
+
+
+****
+Demo
+****
+
+Feel free to use the provided demo project as a sandbox.

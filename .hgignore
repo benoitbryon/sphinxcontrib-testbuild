@@ -1,0 +1,18 @@
+syntax: glob
+
+# Local binaries (they are generated).
+bin/
+
+# Libraries.
+lib/
+
+# Data.
+var/
+
+# Python files.
+*.pyc
+*.pyo
+*.egg-info
+
+# Editor(s) temporary files.
+.*.swp
