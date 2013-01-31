@@ -1,0 +1,10 @@
+#######
+Install
+#######
+
+Since this project is not released on PyPI yet, use the development version.
+As an example, with ``pip``:
+
+.. code-block:: sh
+
+   pip install https://bitbucket.org/benoitbryon/sphinxcontrib-testbuild/get/tip.tar.gz#egg=sphinxcontrib.testbuild

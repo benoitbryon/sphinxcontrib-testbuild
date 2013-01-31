@@ -1,4 +1,4 @@
 recursive-include sphinxcontrib *
 global-exclude *.pyc
 include *.txt
-include README VERSION CHANGELOG LICENSE AUTHORS
+include README VERSION CHANGELOG LICENSE AUTHORS INSTALL
