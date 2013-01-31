@@ -14,8 +14,7 @@ name = 'sphinxcontrib-testbuild'
 packages = ['sphinxcontrib.testbuild']
 readme = read_relative_file('README')
 version = read_relative_file('VERSION')
-requirements = ['setuptools',
-                'Sphinx>=0.6']
+requirements = ['setuptools']
 entry_points = {}
 
 
