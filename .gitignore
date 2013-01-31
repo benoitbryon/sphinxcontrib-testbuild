@@ -1,13 +1,11 @@
-syntax: glob
-
 # Local binaries (they are generated).
-bin/
+/bin/
 
 # Libraries.
-lib/
+/lib/
 
 # Data.
-var/
+/var/
 
 # Python files.
 *.pyc
