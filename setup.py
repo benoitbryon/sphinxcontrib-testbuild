@@ -16,6 +16,7 @@ readme = read_relative_file('README')
 version = read_relative_file('VERSION')
 requirements = ['setuptools',
                 'Sphinx>=0.6']
+entry_points = {}
 
 
 if __name__ == '__main__':
@@ -25,7 +26,7 @@ if __name__ == '__main__':
           long_description=readme,
           author='Benoît Bryon',
           author_email='benoit@marmelune.net',
-          url='http://bitbucket.org/benoitbryon/sphinxcontrib-testbuild',
+          url='https://bitbucket.org/benoitbryon/sphinxcontrib-testbuild',
           license='BSD',
           zip_safe=False,
           classifiers=['Development Status :: 4 - Beta',
@@ -43,4 +44,5 @@ if __name__ == '__main__':
           namespace_packages=['sphinxcontrib'],
           include_package_data=True,
           install_requires=requirements,
+          entry_points=entry_points,
           )

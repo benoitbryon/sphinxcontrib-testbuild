@@ -3,6 +3,8 @@ BIN_DIR = $(ROOT_DIR)/bin
 BUILDOUT_DIR = $(ROOT_DIR)/lib/buildout
 BUILDOUT = $(BIN_DIR)/buildout
 PYTHON = python
+NOSE = $(BIN_DIR)/nosetests
+
 
 develop: buildout
 
@@ -32,3 +34,7 @@ documentation:
 	mkdir -p docs/_static
 	mkdir -p $(ROOT_DIR)/var/docs
 	make --directory=docs clean html doctest
+
+
+test:
+	$(NOSE) --config=etc/nose.cfg

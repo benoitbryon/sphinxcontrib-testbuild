@@ -15,27 +15,52 @@ status.
 
 sphinxcontrib.testbuild implements such tests for Sphinx, in Python.
 
+.. note::
+
+   http://docs.writethedocs.org provides recipes and conventions about
+   documentation. sphinxcontrib.testbuild has been created as part of the
+   WriteTheDocs toolkit, implementing "test your documentation builds"
+   recommendation.
+
 
 *****
 Usage
 *****
 
-Using sphinx-testbuild command
-==============================
+Default: using conventions
+==========================
 
-Run ``sphinx-testbuild`` command and get test results.
-See ``sphinx-testbuild --help`` for details.
+sphinxcontrib.testbuild uses these conventions as default configuration:
 
+* There is a Makefile with a "documentation" target in project's root folder.
+* Sphinx-based documentation is located in "docs/" folder relative to project's
+  root.
+* There is a "docs/Makefile", which contains ``sphinx-build`` executable
+  location as ``SPHINXBUILD`` and build directory as ``BUILDDIR``.
+
+Run tests with Python's standard ``unittest``:
+
+.. code-block:: sh
+
+   # cd path/to/your/project/, i.e. where there is a Makefile and a docs/
+   python -m unittest sphinxcontrib.testbuild.tests
+
+Using ``nosetests``:
+
+.. code-block:: sh
+
+   bin/nosetests sphinxcontrib.testbuild.tests
 
 Using a SphinxBuildTestCase
 ===========================
 
 Extend and customize :py:class:`sphinxcontrib.testbuild.SphinxBuildTestCase`
-class in your test suite. Then run your test suite as usual.
+class in some test suite of yours. Then run your test suite as usual.
 
 
 ****
 Demo
 ****
 
-Feel free to use the provided demo project as a sandbox.
+This project uses its own documentation for demo and tests. See :file:`docs/`
+folder.
