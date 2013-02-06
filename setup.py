@@ -11,7 +11,7 @@ def read_relative_file(filename):
 
 
 name = 'sphinxcontrib-testbuild'
-packages = ['sphinxcontrib.testbuild']
+packages = ['sphinxcontrib', 'sphinxcontrib.testbuild']
 readme = read_relative_file('README')
 version = read_relative_file('VERSION')
 requirements = ['setuptools']
