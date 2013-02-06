@@ -2,65 +2,22 @@
 sphinxcontrib.testbuild
 #######################
 
-Test Sphinx builds with Python tests.
+Test builds of Sphinx-based documentations, using Python.
+
+This projects allows integration of Sphinx documentation builds in continuous
+integration platforms, so that you make sure documentation is ok.
+
+For a live demo, see project's continuous integration reports at
+https://travis-ci.org/benoitbryon/sphinxcontrib-testbuild
 
 
-******
-Vision
-******
+**********
+Ressources
+**********
 
-As a documentation writer, I want to include documentation builds inside my
-continuous integration test suite, so that I'm aware of documentation build
-status.
-
-sphinxcontrib.testbuild implements such tests for Sphinx, in Python.
-
-.. note::
-
-   http://docs.writethedocs.org provides recipes and conventions about
-   documentation. sphinxcontrib.testbuild has been created as part of the
-   WriteTheDocs toolkit, implementing "test your documentation builds"
-   recommendation.
-
-
-*****
-Usage
-*****
-
-Default: using conventions
-==========================
-
-sphinxcontrib.testbuild uses these conventions as default configuration:
-
-* There is a Makefile with a "documentation" target in project's root folder.
-* Sphinx-based documentation is located in "docs/" folder relative to project's
-  root.
-* There is a "docs/Makefile", which contains ``sphinx-build`` executable
-  location as ``SPHINXBUILD`` and build directory as ``BUILDDIR``.
-
-Run tests with Python's standard ``unittest``:
-
-.. code-block:: sh
-
-   # cd path/to/your/project/, i.e. where there is a Makefile and a docs/
-   python -m unittest sphinxcontrib.testbuild.tests
-
-Using ``nosetests``:
-
-.. code-block:: sh
-
-   bin/nosetests sphinxcontrib.testbuild.tests
-
-Using a SphinxBuildTestCase
-===========================
-
-Extend and customize :py:class:`sphinxcontrib.testbuild.SphinxBuildTestCase`
-class in some test suite of yours. Then run your test suite as usual.
-
-
-****
-Demo
-****
-
-This project uses its own documentation for demo and tests. See :file:`docs/`
-folder.
+* online documentation: http://sphinxcontrib-testbuild.readthedocs.org
+* feedback, questions: http://sphinxcontrib-testbuild.readthedocs.org/en/latest/about/community.html
+* bugtracker: https://github.com/benoitbryon/sphinxcontrib-testbuild/issues
+* PyPI page: http://pypi.python.org/pypi/sphinxcontrib-testbuild
+* code repository: https://github.com/benoitbryon/sphinxcontrib-testbuild
+* continuous integration: https://travis-ci.org/benoitbryon/sphinxcontrib-testbuild

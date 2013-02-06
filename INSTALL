@@ -2,9 +2,12 @@
 Install
 #######
 
-Since this project is not released on PyPI yet, use the development version.
 As an example, with ``pip``:
 
 .. code-block:: sh
 
-   pip install https://github.com/benoitbryon/sphinxcontrib-testbuild/archive/master.tar.gz#egg=sphinxcontrib-testbuild
+   pip install sphinxcontrib-testbuild
+
+.. note::
+
+   If you want to setup a development environment, see :doc:`dev`.

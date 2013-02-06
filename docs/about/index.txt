@@ -1,0 +1,16 @@
+#############################
+About sphinxcontrib-testbuild
+#############################
+
+This section provides information about the sphinxcontrib-testbuild project
+itself.
+
+.. toctree::
+   :maxdepth: 1
+
+   vision
+   alternatives
+   community
+   license
+   authors
+   changelog

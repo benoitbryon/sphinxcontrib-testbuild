@@ -1,0 +1,10 @@
+#################################
+Alternatives and related projects
+#################################
+
+This document presents other projects that provide similar or complementary
+functionalities. It focuses on differences with sphinxcontrib-testbuild.
+
+
+The authors aren't aware of alternatives yet.
+If you know some, please :doc:`let us know <community>` :)

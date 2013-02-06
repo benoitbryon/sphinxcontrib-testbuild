@@ -1,0 +1,18 @@
+#########
+Community
+#########
+
+Feedback, questions? Let's get in touch!
+
+* Create issues on `project's bugtracker`_.
+* Or contact :doc:`authors` directly.
+
+
+**********
+References
+**********
+
+.. target-notes::
+
+.. _`project's bugtracker`:
+   https://github.com/benoitbryon/sphinxcontrib-testbuild/issues

@@ -1,0 +1,19 @@
+######
+Vision
+######
+
+As a documentation writer, I want to include documentation builds inside my
+continuous integration test suite, so that I'm aware of documentation build
+status.
+
+sphinxcontrib.testbuild implements such tests for Sphinx, in Python.
+
+
+************
+WriteTheDocs
+************
+
+http://docs.writethedocs.org provides recipes and conventions about
+documentation. sphinxcontrib.testbuild has been created as part of the
+WriteTheDocs toolkit, as an implementation of "test your documentation builds"
+recommendation.

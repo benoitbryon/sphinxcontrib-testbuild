@@ -1,0 +1,31 @@
+####
+Demo
+####
+
+This project uses its own documentation for demo and tests.
+Have a look at the `project's code repository`_:
+
+* `docs/ folder`_ contains the documentation.
+* `Makefile`_ has a "test" target that runs sphinxcontrib-testbuild tests
+  with nose.
+* `etc/nose.cfg`_ holds nose configuration.
+
+See also `test reports on Travis-CI.org`_.
+
+
+**********
+References
+**********
+
+.. target-notes::
+
+.. _`project's code repository`:
+   https://github.com/benoitbryon/sphinxcontrib-testbuild/tree/master
+.. _`docs/ folder`:
+   https://github.com/benoitbryon/sphinxcontrib-testbuild/tree/master/docs/
+.. _`Makefile`:
+   https://github.com/benoitbryon/sphinxcontrib-testbuild/tree/master/Makefile
+.. _`etc/nose.cfg`:
+   https://github.com/benoitbryon/sphinxcontrib-testbuild/tree/master/etc/nose.cfg
+.. _`test reports on Travis-CI.org`:
+   https://travis-ci.org/benoitbryon/sphinxcontrib-testbuild/builds
