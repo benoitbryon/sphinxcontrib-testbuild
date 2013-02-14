@@ -1,7 +1,7 @@
 Changelog
 =========
 
-0.1.2 (unreleased)
+0.1.2 (2013-02-14)
 ------------------
 
 - Issue 1, fixed comparison of build times which led to AssertionError such as
