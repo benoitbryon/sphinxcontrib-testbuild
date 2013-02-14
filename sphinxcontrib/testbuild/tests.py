@@ -2,10 +2,8 @@
 """Tests around project's documentation."""
 from contextlib import contextmanager
 from os import chdir, getcwd
-from os.path import (abspath, dirname, exists, getmtime, isabs, isdir, isfile,
-                     join)
+from os.path import exists, getmtime, isabs, isdir, isfile, join
 from subprocess import Popen, PIPE
-import time
 from unittest import TestCase
 
 
@@ -110,7 +108,7 @@ class SphinxDocumentationBuilder(object):
     def get_build_time(self):
         """Return time of last build, or None if no build was performed."""
         if exists(self.build_file):
-            return time.ctime(getmtime(self.build_file))
+            return getmtime(self.build_file)
 
 
 class DocumentationBuildTestCase(TestCase):
