@@ -150,5 +150,5 @@ class DocumentationBuildTestCase(TestCase):
         self.assertTrue(isfile(self.doc_builder.build_file))
         if self.doc_builder.previous_build_time is not None:
             latest_build_time = self.doc_builder.get_build_time()
-            self.assertGreater(latest_build_time,
-                               self.doc_builder.previous_build_time)
+            previous_build_time = self.doc_builder.previous_build_time
+            self.assertTrue(latest_build_time > previous_build_time)
