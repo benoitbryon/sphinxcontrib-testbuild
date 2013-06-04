@@ -25,7 +25,7 @@ if __name__ == '__main__':
           long_description=readme,
           author='Benoît Bryon',
           author_email='benoit@marmelune.net',
-          url='https://bitbucket.org/benoitbryon/sphinxcontrib-testbuild',
+          url='https://github.com/benoitbryon/sphinxcontrib-testbuild',
           license='BSD',
           zip_safe=False,
           classifiers=['Development Status :: 4 - Beta',
