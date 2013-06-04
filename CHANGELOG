@@ -1,8 +1,8 @@
 Changelog
 =========
 
-0.2 (unreleased)
-----------------
+0.1.3 (2013-06-04)
+------------------
 
 - Bug #2: improved compatibility with Python 2.6. Fixed
   'DocumentationBuildTestCase' object has no attribute 'assertGreater' error.
